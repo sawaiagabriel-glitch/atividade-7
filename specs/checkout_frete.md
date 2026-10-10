@@ -7,3 +7,8 @@ THE SYSTEM SHALL calcular o valor total adicionando a taxa de frete padrão de R
 IF o subtotal do carrinho for maior ou igual a R$ 250,00,
 THEN THE SYSTEM SHALL conceder frete grátis, com taxa de R$ 0,00.
 
+## REQ-03
+IF o usuário selecionar frete expresso,
+THEN THE SYSTEM SHALL adicionar uma taxa fixa de R$ 10,00 ao valor do frete calculado.## REQ-03
+IF o usuário selecionar frete expresso,
+THEN THE SYSTEM SHALL adicionar uma taxa fixa de R$ 10,00 ao valor do frete calculado.
