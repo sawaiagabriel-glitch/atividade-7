@@ -6,15 +6,14 @@ Casos testados:
 - valores abaixo de R$ 250,00 retornam frete de R$ 15,00;
 - valores iguais ou superiores a R$ 250,00 retornam frete grátis.
 
-Comando utilizado:
+Comando executado:
+python -m pytest tests/test_frete.py
 
-python -m pytest
-
-Resultado:
-
-2 testes executados com sucesso.
-
-Status: APROVADO
+Resultado obtido:
+- Quantidade de testes executados: 2
+- Quantidade de testes aprovados: 2
+- Quantidade de falhas: 0
+- Status final: APROVADO
 
 
 
@@ -32,12 +31,14 @@ Resultado esperado:
 - R$ 250,00 + R$ 0,00 = R$ 250,00
 
 Resultado obtido:
-[preencher com o resultado real do pytest]
+- Quantidade de testes executados: 2
+- Quantidade de testes aprovados: 2
+- Quantidade de falhas: 0
+- Status final: APROVADO
 
-Status:
-[APROVADO ou REPROVADO]
 
-Exercício 6.4 — Teste Funcional
+
+# Exercício 6.4 — Teste Funcional
 
 Fluxo testado:
 Execução do cálculo de frete pela interface de linha de comando.
@@ -49,8 +50,8 @@ Casos:
 Comando executado:
 python -m pytest tests/test_funcional_frete.py
 
-Resultado:
-[preencher com o resultado real]
-
-Status:
-[APROVADO ou REPROVADO]
+Resultado obtido:
+- Quantidade de testes executados: 2
+- Quantidade de testes aprovados: 2
+- Quantidade de falhas: 0
+- Status final: APROVADO

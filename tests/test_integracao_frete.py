@@ -6,4 +6,4 @@ def test_total_com_frete_padrao():
 
 
 def test_total_com_frete_gratis():
-    assert calcular_total_com_frete(250.0)
+    assert calcular_total_com_frete(250.0) == 250.0
