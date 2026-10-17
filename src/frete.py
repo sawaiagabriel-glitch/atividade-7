@@ -24,3 +24,15 @@ if __name__ == "__main__":
     frete = calcular_frete(valor, expresso=expresso)
 
     print(frete)
+
+class ServicoFrete:
+    def __init__(self, servico_logistica, servico_notificacao):
+        self.servico_logistica = servico_logistica
+        self.servico_notificacao = servico_notificacao
+
+    def confirmar_frete(self, pedido_id, usuario):
+        taxa = self.servico_logistica.consultar_taxa(pedido_id)
+
+        self.servico_notificacao.enviar_notificacao_rastreio(pedido_id)
+
+        return taxa
