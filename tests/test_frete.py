@@ -38,3 +38,41 @@ def test_frete_gratis_a_partir_de_250():
 
     # Assert
     assert resultado == frete_esperado
+
+
+
+    def test_taxa_adicional_para_regiao_norte():
+        # Arrange
+        valor_carrinho = 200.0
+        regiao = "Norte"
+        frete_esperado = 25.0  # 15 base + 10 adicional
+
+        # Act
+        resultado = calcular_frete(valor_carrinho, regiao)
+
+        # Assert
+        assert resultado == frete_esperado
+
+    def test_taxa_adicional_para_regiao_nordeste():
+        # Arrange
+        valor_carrinho = 200.0
+        regiao = "Nordeste"
+        frete_esperado = 25.0
+
+        # Act
+        resultado = calcular_frete(valor_carrinho, regiao)
+
+        # Assert
+        assert resultado == frete_esperado
+
+    def test_frete_gratis_acima_de_300_no_norte():
+        # Arrange
+        valor_carrinho = 301.0
+        regiao = "Norte"
+        frete_esperado = 0.0
+
+        # Act
+        resultado = calcular_frete(valor_carrinho, regiao)
+
+        # Assert
+        assert resultado == frete_esperado
